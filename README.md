@@ -15,7 +15,7 @@ Zwack has many possible uses, here are some examples:
   
 ## Supports
 
-At this time Zwack runs successfully on Mac OSX (Please check Requirements below) and Raspberry PI. Should run on Windows but it hasn't been tested successfully. Only specific USB dongles work. You need a Bluetooth adapter that uses a chipset with a WinUSB-compatible driver that allows raw USB access, bypassing the Windows Bluetooth stack entirely. Because Windows manages the Bluetooth stack and doesn't provide a way to access the radio directly, you can't use the built-in Bluetooth on most Windows laptops.
+Zwack runs successfully on **macOS** and **Raspberry Pi** (Linux). **Windows is not supported.** Windows was never confirmed working due to fundamental limitations: the Windows Bluetooth stack does not allow raw radio access, making `bleno` non-functional on standard hardware. Specific WinUSB-compatible USB adapters were required to bypass this, but even that path was never reliably tested. Windows support has been officially deprecated.
 
 ## Installation
 
@@ -96,7 +96,7 @@ Press `x` or `q` to exit Zwack.
 
 ## Requirements
 
-Requires NodeJS, and should run in all Bleno (the base BLE module) supported platforms, which are Mac, Windows or Raspberry Pi.
+Requires NodeJS. Supported platforms are **macOS** and **Raspberry Pi** (Linux). Windows is **not supported**.
 
 Zwack cannot run on the same computer as the fitness or virtual indoor bike app, you'll need to run them on different systems.
 
